@@ -1,0 +1,1208 @@
+  [1m[36mBook Load (66.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+Started GET "/books" for ::1 at 2017-05-11 15:34:05 +0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for BooksController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.2) lib/rack/etag.rb:25:in `call'
+rack (2.0.2) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.2) lib/rack/head.rb:12:in `call'
+rack (2.0.2) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.2) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (6.0ms)
+Started GET "/books" for ::1 at 2017-05-11 15:34:27 +0300
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template books/books, application/books with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/pklimenkov/projects/test/pklimenkov-roundforest/app/views"
+):
+  
+app/controllers/books_controller.rb:5:in `index'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (92.6ms)
+Started GET "/books" for ::1 at 2017-05-11 15:37:47 +0300
+Processing by BooksController#index as HTML
+  Rendering application/books.html.erb within layouts/application
+  [1m[36mBook Load (84.4ms)[0m  [1m[34mSELECT "books".* FROM "books" ORDER BY "books"."id" ASC[0m
+  Rendered application/books.html.erb within layouts/application (701.6ms)
+Completed 200 OK in 1285ms (Views: 1139.9ms | ActiveRecord: 89.3ms)
+
+
+Started GET "/books" for ::1 at 2017-05-11 15:39:59 +0300
+Processing by BooksController#index as HTML
+  Rendering application/books.html.erb within layouts/application
+  [1m[36mBook Load (42.0ms)[0m  [1m[34mSELECT "books".* FROM "books" ORDER BY "books"."id" ASC[0m
+  Rendered application/books.html.erb within layouts/application (650.7ms)
+Completed 200 OK in 676ms (Views: 632.7ms | ActiveRecord: 42.0ms)
+
+
+Started GET "/books/prime" for ::1 at 2017-05-11 15:44:30 +0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for BooksController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.2) lib/rack/etag.rb:25:in `call'
+rack (2.0.2) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.2) lib/rack/head.rb:12:in `call'
+rack (2.0.2) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.2) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (5.7ms)
+Started GET "/books/prime" for ::1 at 2017-05-11 15:45:31 +0300
+  
+ActionController::RoutingError (undefined method `actions' for BooksController:Class):
+  
+app/controllers/books_controller.rb:3:in `<class:BooksController>'
+app/controllers/books_controller.rb:2:in `<top (required)>'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered collection of /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [24 times] (16.7ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.9ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.1ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (148.3ms)
+Started GET "/books/prime" for ::1 at 2017-05-11 15:47:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/books/prime"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (5.1ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.0ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.1ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.9ms)
+Started GET "/books" for ::1 at 2017-05-13 17:44:26 +0300
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb
+  [1m[36mBook Load (54.3ms)[0m  [1m[34mSELECT "books".* FROM "books" ORDER BY "books"."id" ASC[0m
+  Rendered books/index.html.erb (705.0ms)
+Completed 200 OK in 775ms (Views: 648.6ms | ActiveRecord: 66.2ms)
+
+
+Started GET "/books/prime" for ::1 at 2017-05-13 17:44:45 +0300
+Processing by BooksController#prime as HTML
+  Rendering books/index.html.erb
+  [1m[36mBook Load (1.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendered books/index.html.erb (7.4ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/books/prime" for ::1 at 2017-05-13 17:53:09 +0300
+Processing by BooksController#prime as HTML
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT "books"."id" FROM "books"[0m
+  Rendering books/index.html.erb
+  [1m[36mBook Load (21.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN (1103, 1109, 1117, 1123, 1129, 1151, 1153, 1163, 1171, 1181, 1187, 1193, 1201, 1213, 5563, 5569, 5573, 5581, 5639, 5641, 5647, 5651, 5653, 5657, 5659, 1217, 1223, 1229, 1231, 1237, 1249, 1259, 1277, 1279, 1283, 1289, 1291, 1297, 1301, 1303, 1307, 1319, 1321, 1327, 1361, 1367, 1373, 1381, 1399, 1409, 1423, 1427, 1429, 1433, 1439, 1447, 1451, 1453, 1459, 1471, 1481, 1483, 1487, 1489, 1493, 1499, 1511, 1523, 1531, 1543, 1549, 1553, 1559, 1567, 1571, 1579, 1583, 1597, 1601, 1607, 1609, 1613, 1619, 1621, 1627, 1637, 1657, 1663, 1667, 1669, 1693, 1697, 1699, 1709, 1721, 1723, 1733, 1741, 1747, 1753, 1759, 1777, 1783, 1787, 1789, 1801, 1811, 1823, 1831, 1847, 1861, 1867, 1871, 1873, 1877, 1879, 1889, 1901, 1907, 1913, 1931, 1933, 1949, 1951, 1973, 1979, 1987, 1993, 1997, 1999, 2003, 2011, 2017, 2027, 2029, 2039, 2053, 2063, 2069, 2081, 2083, 2087, 2089, 2099, 2111, 2113, 2129, 2131, 2137, 2141, 2143, 2153, 2161, 2179, 2203, 2207, 2213, 2221, 2237, 2239, 2243, 2251, 2267, 2269, 2273, 2281, 2287, 2293, 2297, 2309, 2311, 2333, 2339, 2341, 2347, 2351, 2357, 2371, 2377, 2381, 2383, 2389, 2393, 2399, 2411, 2417, 2423, 2437, 2441, 2447, 2459, 2467, 2473, 2477, 2503, 2521, 2531, 2539, 2543, 2549, 2551, 2557, 2579, 2591, 2593, 2609, 2617, 2621, 2633, 2647, 2657, 2659, 2663, 2671, 2677, 2683, 2687, 2689, 2693, 2699, 2707, 2711, 2713, 2719, 2729, 2731, 2741, 2749, 2753, 2767, 2777, 2789, 2791, 2797, 2801, 2803, 2819, 2833, 2837, 2843, 2851, 2857, 2861, 2879, 2887, 3181, 2897, 2903, 2909, 2917, 2927, 2939, 2953, 2957, 2963, 2969, 2971, 2999, 3001, 3011, 3019, 3023, 3037, 3041, 3049, 3061, 3067, 3079, 3083, 3089, 3109, 3119, 3121, 3137, 3163, 3167, 3169, 3187, 3191, 3203, 3209, 3217, 3221, 3229, 3251, 3253, 3257, 3259, 3271, 3299, 3301, 3307, 3313, 3319, 3323, 3329, 3331, 3343, 3347, 3359, 3361, 3371, 3373, 3389, 3391, 3407, 3413, 3433, 3449, 3457, 3461, 3463, 3467, 3469, 3491, 3499, 3511, 3517, 3527, 3529, 3533, 3539, 3541, 3547, 3557, 3559, 3571, 3581, 3583, 3593, 3607, 3613, 3617, 3623, 3631, 3637, 3643, 3659, 3671, 3673, 3677, 3691, 3697, 3701, 3709, 3719, 3727, 3733, 3739, 3761, 3767, 3769, 3779, 3793, 3797, 3803, 3821, 3823, 3833, 3847, 3851, 3853, 3863, 3877, 3881, 3889, 3907, 3911, 3917, 3919, 3923, 3929, 3931, 3943, 3947, 3967, 3989, 4001, 4003, 4007, 4013, 4019, 4021, 4027, 4099, 4049, 4051, 4057, 4073, 4079, 4091, 4093, 4111, 4127, 4129, 4133, 4139, 4153, 4157, 4159, 4177, 4201, 4211, 4217, 4219, 4229, 4231, 4241, 4243, 4253, 4259, 4261, 4271, 4273, 4283, 4289, 4297, 4327, 4337, 4339, 4349, 4357, 4363, 4373, 4733, 4391, 4397, 4409, 4421, 4423, 4441, 4447, 4451, 4457, 4463, 4481, 4483, 4493, 4507, 4513, 4517, 4519, 4523, 4547, 4549, 4561, 4567, 4583, 4591, 4597, 4603, 4621, 4637, 4639, 4643, 4649, 4651, 4657, 4663, 4673, 4679, 4691, 4703, 4721, 4723, 4729, 4751, 4759, 4783, 4787, 4789, 4793, 4799, 4801, 4813, 4817, 4831, 4861, 4871, 4877, 4889, 4903, 4909, 4919, 4931, 4933, 4937, 4943, 4951, 4957, 4967, 4969, 4973, 4987, 4993, 4999, 5003, 5009, 5011, 5021, 5023, 5039, 5051, 5059, 5077, 5081, 5087, 5099, 5101, 5107, 5113, 5119, 5147, 5153, 5167, 5171, 5179, 5189, 5197, 5209, 5227, 5231, 5233, 5237, 5261, 5273, 5279, 5281, 5297, 5303, 5309, 5323, 5333, 5347, 5351, 5381, 5387, 5393, 5399, 5407, 5413, 5417, 5419, 5431, 5437, 5441, 5443, 5449, 5471, 5477, 5479, 5483, 5501, 5503, 5507, 5519, 5521, 5527, 5531, 5557, 5591, 5623, 5669, 5683, 5689, 5693, 5701, 5711, 5717, 5737, 5741, 5743, 5749, 5779, 5783, 5791, 5801, 5807, 5813, 5821, 5827, 5839, 5843, 5849, 5851, 5857, 5861, 5867, 5869, 5879, 5881, 6007, 5897, 5903, 5923, 5927, 5939, 5953, 5981, 5987, 6011, 6029, 6037, 6043, 6047, 6053, 6067, 6073, 6079, 6089, 6091, 6101, 6113, 6121, 6131, 6133, 6143, 6151, 6163, 6173, 6197, 6199, 6203, 6211, 6217, 6221, 6229, 6247, 6257, 6263, 6269, 6271, 6277, 6287, 6299, 6301, 6311, 6317, 6323, 6329, 6337, 6343, 6353, 6359, 6361, 6367, 6373, 6379, 6389, 6397, 6421, 6427, 6449, 6451, 6469, 6473, 6481, 6491, 6521, 6529, 6547, 6551, 6553, 6563, 6569, 6571, 6577, 6581, 6599, 6607, 6619, 6637, 6653, 6659, 6661, 6673, 6679, 6689, 6691, 6701, 6703, 6709, 6719, 6733, 6737, 6761, 6763, 6779, 6781, 6791, 6793, 6803, 6823, 6827, 6829, 6833, 6841, 6857, 6863, 6869, 6871, 6883, 6899, 6907, 6911, 6917, 6947, 6949, 6959, 6961, 6967, 6971, 6977, 6983, 6991, 6997, 7001, 7013, 7019, 7027, 7039, 7043, 7057, 7069, 7079, 7103, 7109, 7121, 7127, 7129, 7151, 7159, 7177, 7187, 7193, 7207, 7211, 7213, 7219, 7229, 7237, 7243, 7247, 7253, 7283, 7297, 7307, 7309, 7321, 7331, 7333, 7349, 7351, 7369, 7393, 7411, 7417, 7433, 7451, 7457, 7459, 7477, 7481, 7487, 7489, 7499, 7507, 7517, 7523, 7529, 7537, 7541, 7547, 7549, 7559, 7561, 7573, 7577, 7583, 7589, 7591, 7603, 7607, 7621, 7639, 7643, 7649, 7669, 7673, 7681, 7687, 7691, 7699, 7703, 7717, 7723, 7727, 7741, 7753, 7757, 7759, 7789, 7793, 7817, 7823, 7829, 7841, 7853, 7867, 7873, 7877, 7879, 7883, 7901, 7907, 7919, 7927, 7933, 7937, 7949, 7951, 7963, 7993, 8009, 8011, 8017, 8039, 8053, 8059, 8069, 8081, 8087, 8089, 8093, 8101, 8111, 8117, 8123, 8147, 8161, 8167, 8171, 8179, 8191, 8209, 8219, 8221, 8231, 8233, 8237, 8243, 8263, 8269, 8273, 8287, 8291, 8293, 8297, 8311, 8317, 8329, 8353, 8363, 8369, 8377, 8387, 8389, 8419, 8423, 8429, 8431, 8443, 8447, 8461, 8467, 8501, 8513, 8521, 8527, 8537, 8539, 8543, 8563, 8573, 8581, 8597, 8599, 8609, 8623, 8627, 8629, 8641, 8647, 8663, 8669, 8677, 8681, 8689, 8693, 8699, 8707, 8713, 8719, 8731, 8737, 8741, 8747, 8753, 8761, 8779, 8783, 8803, 8807, 8819, 8821, 8831, 8837, 8839, 8849, 8861, 8863, 8867, 8887, 8893, 8923, 8929, 8933, 8941, 8951, 8963, 8969, 8971, 8999, 9001, 9007, 9011, 9013, 9029, 9041, 9043, 9049, 9059, 9067, 9091, 9103, 9109, 9127, 9133, 9137, 9151, 9157, 9161, 9173, 9181, 9187, 9199, 9203, 9209, 9221, 9227, 9239, 9241, 9257, 9277, 9281, 9283, 9293, 9311, 9319, 9323, 9337, 9341, 9343, 9349, 9371, 9377, 9391, 9397, 9403, 9413, 9419, 9421, 9431, 9433, 9437, 9439, 9461, 9463, 9467, 9473, 9479, 9491, 9497, 9511, 9521, 9533, 9539, 9547, 9551, 9587, 9601, 9613, 9619, 9623, 9629, 9631, 9643, 9649, 9661, 9677, 9679, 9689, 9697, 9719, 9721, 9733, 9739, 9743, 9749, 9767, 9769, 9781, 9787, 9791, 9803, 9811, 9817, 9829, 9833, 9839, 9851, 9857, 9859, 9871, 9883, 9887, 9901, 9907, 9923, 9929, 9931, 9941, 9949, 9967, 9973, 10007, 10009, 10037, 10039, 10061, 10067, 10069, 10079, 10091, 10093, 10099, 10103, 10111, 10133, 10139, 10141, 10151, 10159, 10163, 10169, 10177, 10181, 10193, 10211, 10223, 10243, 10247, 10253, 10259, 10267, 10271, 10273, 10289, 10301, 10303, 10313, 10321, 10331, 10333, 10337, 10343, 10357, 10369, 10391, 10399, 10427, 10429, 10433, 10453, 10457, 10459, 10463, 10477, 10487, 10499, 10501, 10513, 10529, 10531, 10559, 10567, 10589, 10597, 10601, 10607, 10613, 10627, 10631, 10639, 10651, 10657, 10663, 10667, 10687, 10691, 10709, 10711, 10723, 10729, 10733, 10739, 10753, 10771, 10781, 10789, 10799, 10831, 10837, 10847, 10853, 10859, 10861, 10867, 10883, 10889, 10891, 10903, 10909, 10937, 10939, 10949, 10957, 10973, 10979, 10987, 10993, 11003, 11027, 11047, 11057, 11059, 11069, 11071, 11083, 11087, 11093) ORDER BY "books"."id" ASC[0m
+  Rendered books/index.html.erb (104.0ms)
+Completed 200 OK in 268ms (Views: 88.5ms | ActiveRecord: 31.9ms)
+
+
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "books"."id" FROM "books"[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (7.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY length(name) DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT  "books"."name" FROM "books" ORDER BY length(name) DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT  "books"."name" FROM "books" ORDER BY length(name) DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (10.2ms)[0m  [1m[34mSELECT  "books"."name" FROM "books" ORDER BY length(name) DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (16.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE (length(name)) LIMIT $1[0m  [["LIMIT", 10]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE (length(name) in (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47)) LIMIT $1[0m  [["LIMIT", 10]]
+Started GET "/books/prime" for ::1 at 2017-05-13 18:06:56 +0300
+Processing by BooksController#prime as HTML
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT  "books"."name" FROM "books" ORDER BY length(name) DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering books/index.html.erb
+  [1m[36mBook Load (11.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (length(name) in (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47)) ORDER BY "books"."id" ASC[0m
+  Rendered books/index.html.erb (182.5ms)
+Completed 200 OK in 273ms (Views: 177.5ms | ActiveRecord: 25.4ms)
+
+
+Started GET "/articles" for ::1 at 2017-05-13 18:07:55 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb
+  [1m[36mArticle Load (15.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."id" ASC[0m
+  Rendered articles/index.html.erb (50.9ms)
+Completed 200 OK in 59ms (Views: 37.0ms | ActiveRecord: 19.1ms)
+
+
+  [1m[36mList Load (0.8ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (2.1ms)[0m  [1m[34mSELECT "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1[0m  [["list_id", 154]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists" INNER JOIN "single_sorts" ON "lists"."id" = "single_sorts"."list_id" WHERE "single_sorts"."book_id" = $1[0m  [["book_id", 1101]]
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1[0m  [["list_id", 154]]
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position[0m  [["list_id", 154]]
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC[0m  [["list_id", 154]]
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC[0m  [["list_id", 154]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "single_sorts"."position" FROM "single_sorts" WHERE "single_sorts"."book_id" = $1 AND "single_sorts"."list_id" = 154[0m  [["book_id", 2172]]
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC[0m  [["list_id", 154]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "single_sorts"."position" FROM "single_sorts" WHERE "single_sorts"."book_id" = $1 AND "single_sorts"."list_id" = 154[0m  [["book_id", 10592]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "single_sorts"."position" FROM "single_sorts" WHERE "single_sorts"."book_id" = $1 AND "single_sorts"."list_id" = 154[0m  [["book_id", 7594]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "single_sorts"."position" FROM "single_sorts" WHERE "single_sorts"."book_id" = $1 AND "single_sorts"."list_id" = 154[0m  [["book_id", 4564]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "single_sorts"."position" FROM "single_sorts" WHERE "single_sorts"."book_id" = $1 AND "single_sorts"."list_id" = 154[0m  [["book_id", 1962]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "single_sorts"."position" FROM "single_sorts" WHERE "single_sorts"."book_id" = $1 AND "single_sorts"."list_id" = 154[0m  [["book_id", 2123]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "single_sorts"."position" FROM "single_sorts" WHERE "single_sorts"."book_id" = $1 AND "single_sorts"."list_id" = 154[0m  [["book_id", 6370]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "single_sorts"."position" FROM "single_sorts" WHERE "single_sorts"."book_id" = $1 AND "single_sorts"."list_id" = 154[0m  [["book_id", 2172]]
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 154], ["LIMIT", 2]]
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" ORDER BY "lists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/lists/books" for ::1 at 2017-05-13 18:31:06 +0300
+  
+ActionController::RoutingError (uninitialized constant ListsController):
+  
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.2) lib/rack/etag.rb:25:in `call'
+rack (2.0.2) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.2) lib/rack/head.rb:12:in `call'
+rack (2.0.2) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.2) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered collection of /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [5 times] (12.0ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.9ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.7ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (135.8ms)
+Started GET "/lists/books" for ::1 at 2017-05-13 18:31:32 +0300
+Processing by ListController#books as HTML
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template list/list, application/list with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/pklimenkov/projects/test/pklimenkov-roundforest/app/views"
+):
+  
+app/controllers/list_controller.rb:5:in `books'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (97.5ms)
+Started GET "/lists/books" for ::1 at 2017-05-13 18:32:14 +0300
+Processing by ListController#books as HTML
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template list/books, application/books with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/pklimenkov/projects/test/pklimenkov-roundforest/app/views"
+):
+  
+app/controllers/list_controller.rb:5:in `books'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (81.2ms)
+Started GET "/lists/books" for ::1 at 2017-05-13 18:32:56 +0300
+Processing by ListsController#books as HTML
+  Rendering lists/books.html.erb
+  [1m[36mList Load (1.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" ORDER BY "lists"."id" ASC[0m
+  [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 154], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 155], ["LIMIT", 5]]
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 156], ["LIMIT", 5]]
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 157], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 158], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 159], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 160], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 161], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 162], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 163], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 164], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 165], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 166], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 167], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 168], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 169], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 170], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 171], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 172], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 173], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 174], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 175], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 176], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 177], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 178], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 179], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 180], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 181], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 182], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 183], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 184], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 185], ["LIMIT", 5]]
+  [1m[36mBook Load (2.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 186], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 187], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 188], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 189], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 190], ["LIMIT", 5]]
+  [1m[36mBook Load (1.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 191], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 192], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 193], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 194], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 195], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 196], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 197], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 198], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 199], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 200], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 201], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 202], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 203], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 204], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 205], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 206], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 207], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 208], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 209], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 210], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 211], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 212], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 213], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 214], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 215], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 216], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 217], ["LIMIT", 5]]
+  [1m[36mBook Load (2.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 218], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 219], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 220], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 221], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 222], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 223], ["LIMIT", 5]]
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 224], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 225], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 226], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 227], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 228], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 229], ["LIMIT", 5]]
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 230], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 231], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 232], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 233], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 234], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 235], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 236], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 237], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 238], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 239], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 240], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 241], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 242], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 243], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 244], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 245], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 246], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 247], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 248], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 249], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 250], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 251], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 252], ["LIMIT", 5]]
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 253], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 254], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 255], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 256], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 257], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 258], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 259], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 260], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 261], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 262], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 263], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 264], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 265], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 266], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 267], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 268], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 269], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 270], ["LIMIT", 5]]
+  [1m[36mBook Load (1.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 271], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 272], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 273], ["LIMIT", 5]]
+  [1m[36mBook Load (2.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 274], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 275], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 276], ["LIMIT", 5]]
+  [1m[36mBook Load (2.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 277], ["LIMIT", 5]]
+  [1m[36mBook Load (2.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 278], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 279], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 280], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 281], ["LIMIT", 5]]
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 282], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 283], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 284], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 285], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 286], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 287], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 288], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 289], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 290], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 291], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 292], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 293], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 294], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 295], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 296], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 297], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 298], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 299], ["LIMIT", 5]]
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 300], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 301], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 302], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 303], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 304], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 305], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 306], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 307], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 308], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 309], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 310], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 311], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 312], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 313], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 314], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 315], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 316], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 317], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 318], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 319], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 320], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 321], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 322], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 323], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 324], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 325], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 326], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 327], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 328], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 329], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 330], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 331], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 332], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 333], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 334], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 335], ["LIMIT", 5]]
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 336], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 337], ["LIMIT", 5]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 338], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 339], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 340], ["LIMIT", 5]]
+  [1m[36mBook Load (2.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 341], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 342], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 343], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 344], ["LIMIT", 5]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 345], ["LIMIT", 5]]
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 346], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 347], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 348], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 349], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 350], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 351], ["LIMIT", 5]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 352], ["LIMIT", 5]]
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" INNER JOIN "single_sorts" ON "books"."id" = "single_sorts"."book_id" WHERE "single_sorts"."list_id" = $1 ORDER BY single_sorts.position ASC LIMIT $2[0m  [["list_id", 353], ["LIMIT", 5]]
+  Rendered lists/books.html.erb (715.0ms)
+Completed 200 OK in 785ms (Views: 548.5ms | ActiveRecord: 176.1ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:46:46 +0300
+Processing by SearchController#filter as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template search/search, application/search with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/pklimenkov/projects/test/pklimenkov-roundforest/app/views"
+):
+  
+app/controllers/search_controller.rb:4:in `filter'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (80.3ms)
+Started GET "/search/filter" for ::1 at 2017-05-13 18:47:13 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (148.9ms)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `search_search_path' for #<#<Class:0x007fa632980a28>:0x007fa6336ddf90>):
+     6: 
+     7:   <body>
+     8:     <div style="margin: 0 auto; width: 80%">
+     9:       <form action="<%= search_search_path %>">
+    10:         <table>
+    11:           <tr>
+    12:             <th>Name</th>
+  
+app/views/search/search.html.erb:9:in `_app_views_search_search_html_erb__3323272789064242733_70175902065840'
+app/controllers/search_controller.rb:4:in `filter'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.1ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.8ms)
+Started GET "/search/filter" for ::1 at 2017-05-13 18:49:00 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (1.9ms)
+Completed 200 OK in 22ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:49:48 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (0.8ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:50:29 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (1.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:51:02 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (0.9ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:51:37 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (0.7ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:52:07 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (0.4ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:52:45 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (0.6ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:52:59 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (0.7ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:53:21 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (0.4ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:53:34 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (0.6ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:56:37 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (1.9ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 18:57:11 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (1.1ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/find" for ::1 at 2017-05-13 18:57:17 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/search/find"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.4ms)
+  Rendered collection of /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (21.8ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (32.2ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (206.3ms)
+Started GET "/search/find" for ::1 at 2017-05-13 18:58:27 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/search/find"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered collection of /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (3.9ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (95.6ms)
+Started GET "/search/filter" for ::1 at 2017-05-13 18:58:30 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (0.6ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/find" for ::1 at 2017-05-13 18:58:33 +0300
+Processing by SearchController#find as HTML
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.0.2) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.0.2) lib/action_controller/metal/request_forgery_protection.rb:223:in `handle_unverified_request'
+actionpack (5.0.2) lib/action_controller/metal/request_forgery_protection.rb:218:in `verify_authenticity_token'
+activesupport (5.0.2) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.2) lib/active_support/callbacks.rb:169:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:12:in `call'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.2) lib/active_support/callbacks.rb:170:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.2) lib/rack/etag.rb:25:in `call'
+rack (2.0.2) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.2) lib/rack/head.rb:12:in `call'
+rack (2.0.2) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.2) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.8ms)
+Started GET "/search/filter" for ::1 at 2017-05-13 19:01:18 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (1.9ms)
+Completed 200 OK in 24ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/find" for ::1 at 2017-05-13 19:01:22 +0300
+Processing by SearchController#find as HTML
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `pindings' for #<SearchController:0x007fec7b5dc0b8>):
+  
+app/controllers/search_controller.rb:8:in `find'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (173.8ms)
+Started GET "/search/filter" for ::1 at 2017-05-13 19:01:48 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (3.8ms)
+Completed 200 OK in 26ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/find" for ::1 at 2017-05-13 19:01:53 +0300
+Processing by SearchController#find as HTML
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `bindings' for #<SearchController:0x007fdb8588fcd0>):
+  
+app/controllers/search_controller.rb:8:in `find'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (175.7ms)
+Started GET "/search/filter" for ::1 at 2017-05-13 19:02:09 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (1.9ms)
+Completed 200 OK in 21ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/find" for ::1 at 2017-05-13 19:02:12 +0300
+Processing by SearchController#find as HTML
+  [1m[36mBook Load (2.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 500 Internal Server Error in 196676ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `search_list_path' for #<SearchController:0x007f8390a7d7b0>):
+  
+app/controllers/search_controller.rb:10:in `find'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (146.3ms)
+Started GET "/search/filter" for ::1 at 2017-05-13 19:05:38 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (1.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/find" for ::1 at 2017-05-13 19:05:41 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name"=>"de", "genre"=>"", "author"=>"", "publisher"=>"", "submit"=>"Search"}
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 500 Internal Server Error in 278609ms (ActiveRecord: 2.4ms)
+
+
+  
+NameError (undefined local variable or method `search_list_path' for #<SearchController:0x007f838c75fac8>):
+  
+app/controllers/search_controller.rb:10:in `find'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (139.7ms)
+Started GET "/search/filter" for ::1 at 2017-05-13 19:10:57 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (1.8ms)
+Completed 200 OK in 20ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/find" for ::1 at 2017-05-13 19:11:00 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name"=>"sas", "genre"=>"", "author"=>"", "publisher"=>""}
+Unpermitted parameters: genre, author, publisher
+  [1m[36mBook Load (37.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[36mBook Load (3.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."name" = 'aaa'[0m
+  [1m[36mBook Load (1.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" ASC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 500 Internal Server Error in 682683ms (ActiveRecord: 47.7ms)
+
+
+  
+NameError (undefined local variable or method `search_list_path' for #<SearchController:0x007f8fbde94f40>):
+  
+app/controllers/search_controller.rb:10:in `find'
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/pklimenkov/.rvm/gems/ruby-2.2.3@pklimenkov-roundforest-test/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (154.6ms)
+Started GET "/search/filter" for ::1 at 2017-05-13 19:22:31 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (2.1ms)
+Completed 200 OK in 22ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/find" for ::1 at 2017-05-13 19:22:34 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"dd", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>""}
+  [1m[36mArticle Load (13.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE ("articles"."name" ILIKE '%dd%')[0m
+  [1m[36mBook Load (12.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."name" ILIKE '%dd%')[0m
+Redirected to http://localhost:3000/search/filter
+Completed 302 Found in 116ms (ActiveRecord: 32.3ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 19:22:34 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (0.9ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/filter" for ::1 at 2017-05-13 19:24:33 +0300
+Processing by SearchController#filter as HTML
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (2.0ms)
+Completed 200 OK in 23ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:24:37 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"d", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>""}
+  [1m[36mArticle Load (3.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE ("articles"."name" ILIKE '%d%')[0m
+  [1m[36mBook Load (26.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."name" ILIKE '%d%')[0m
+  Rendering search/search.html.erb
+  Rendered search/_results.html.erb (0.4ms)
+  Rendered search/search.html.erb (3.8ms)
+Completed 200 OK in 247ms (Views: 9.8ms | ActiveRecord: 37.2ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:30:36 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"d", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>""}
+  [1m[36mArticle Load (2.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE ("articles"."name" ILIKE '%d%')[0m
+  [1m[36mBook Load (28.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."name" ILIKE '%d%')[0m
+  Rendering search/search.html.erb
+  Rendered search/_results.html.erb (241.8ms)
+  Rendered search/search.html.erb (246.6ms)
+Completed 200 OK in 520ms (Views: 257.5ms | ActiveRecord: 39.3ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:31:21 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"d", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>""}
+  [1m[36mArticle Load (2.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE ("articles"."name" ILIKE '%d%')[0m
+  [1m[36mBook Load (25.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."name" ILIKE '%d%')[0m
+  Rendering search/search.html.erb
+  Rendered search/_results.html.erb (185.8ms)
+  Rendered search/search.html.erb (189.3ms)
+Completed 200 OK in 320ms (Views: 195.0ms | ActiveRecord: 28.2ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:31:47 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"d", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>""}
+  [1m[36mArticle Load (2.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE ("articles"."name" ILIKE '%d%')[0m
+  [1m[36mBook Load (25.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."name" ILIKE '%d%')[0m
+  Rendering search/search.html.erb
+  Rendered search/_results.html.erb (208.5ms)
+  Rendered search/search.html.erb (211.2ms)
+Completed 200 OK in 341ms (Views: 217.4ms | ActiveRecord: 28.1ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:33:01 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"d", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>""}
+  [1m[36mArticle Load (2.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE ("articles"."name" ILIKE '%d%')[0m
+  [1m[36mBook Load (25.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."name" ILIKE '%d%')[0m
+  Rendering search/search.html.erb
+  Rendered search/_results.html.erb (202.2ms)
+  Rendered search/search.html.erb (206.9ms)
+Completed 200 OK in 331ms (Views: 214.8ms | ActiveRecord: 28.2ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:34:13 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"d", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>""}
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE ("articles"."name" ILIKE '%d%')[0m
+  [1m[36mBook Load (24.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."name" ILIKE '%d%')[0m
+  Rendering search/search.html.erb
+  Rendered search/_results.html.erb (226.6ms)
+  Rendered search/search.html.erb (231.3ms)
+Completed 200 OK in 491ms (Views: 242.3ms | ActiveRecord: 37.7ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:34:26 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"", "genres_cont"=>"classic", "authors_cont"=>"", "publisher_cont"=>""}
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE ("articles"."genres" ILIKE '%classic%')[0m
+  [1m[36mBook Load (15.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."genres" ILIKE '%classic%')[0m
+  Rendering search/search.html.erb
+  Rendered search/_results.html.erb (62.7ms)
+  Rendered search/search.html.erb (65.1ms)
+Completed 200 OK in 115ms (Views: 69.2ms | ActiveRecord: 17.4ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:35:46 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>"ssss"}
+  [1m[36mArticle Load (2.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mBook Load (14.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."publisher" ILIKE '%ssss%')[0m
+  Rendering search/search.html.erb
+  Rendered search/_results.html.erb (35.9ms)
+  Rendered search/search.html.erb (40.0ms)
+Completed 200 OK in 181ms (Views: 53.5ms | ActiveRecord: 22.9ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:36:29 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>"sss"}
+  [1m[36mArticle Load (2.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mBook Load (9.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."publisher" ILIKE '%sss%')[0m
+  Rendering search/search.html.erb
+  Rendered search/_results.html.erb (18.9ms)
+  Rendered search/search.html.erb (23.0ms)
+Completed 200 OK in 150ms (Views: 34.6ms | ActiveRecord: 20.1ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:37:27 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>"frfrf"}
+  [1m[36mBook Load (8.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."publisher" ILIKE '%frfrf%')[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."publisher" ILIKE '%frfrf%')[0m
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (2.4ms)
+Completed 200 OK in 147223ms (Views: 13.4ms | ActiveRecord: 11.4ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:40:05 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>"sdef"}
+  [1m[36mBook Load (8.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."publisher" ILIKE '%sdef%')[0m
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (2.4ms)
+Completed 200 OK in 5275ms (Views: 12.4ms | ActiveRecord: 12.0ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:40:31 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>"dsr"}
+  [1m[36mBook Load (8.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."publisher" ILIKE '%dsr%')[0m
+  Rendering search/search.html.erb
+  Rendered search/search.html.erb (3.0ms)
+Completed 200 OK in 101ms (Views: 18.5ms | ActiveRecord: 12.7ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:40:36 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"", "genres_cont"=>"", "authors_cont"=>"d", "publisher_cont"=>""}
+  [1m[36mArticle Load (2.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE ("articles"."authors" ILIKE '%d%')[0m
+  [1m[36mBook Load (22.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."authors" ILIKE '%d%')[0m
+  Rendering search/search.html.erb
+  Rendered search/_results.html.erb (217.1ms)
+  Rendered search/search.html.erb (221.0ms)
+Completed 200 OK in 398ms (Views: 225.7ms | ActiveRecord: 30.0ms)
+
+
+Started POST "/search/filter" for ::1 at 2017-05-13 19:40:39 +0300
+Processing by SearchController#find as HTML
+  Parameters: {"name_cont"=>"", "genres_cont"=>"", "authors_cont"=>"", "publisher_cont"=>"d"}
+  [1m[36mBook Load (16.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE ("books"."publisher" ILIKE '%d%')[0m
+  Rendering search/search.html.erb
+  Rendered search/_results.html.erb (85.2ms)
+  Rendered search/search.html.erb (87.7ms)
+Completed 200 OK in 151ms (Views: 91.9ms | ActiveRecord: 16.6ms)
+
+

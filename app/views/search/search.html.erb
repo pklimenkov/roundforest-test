@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+
+  <body>
+    <div style="margin: 0 auto; width: 80%; border-bottom: 3px solid grey;">
+      <form action="<%= search_filter_path %>" method="post">
+        <table width="100%">
+          <tr>
+            <th style="text-align: left">Name (contains)</th>
+            <th style="text-align: left">Genres (contains)</th>
+            <th style="text-align: left">Authors (contains)</th>
+            <th style="text-align: left">Publisher (contains)</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>
+              <input name="name_cont" type="text" width="130px">
+            </td>
+            <td>
+              <input name="genres_cont" type="text" width="130px">
+            </td>
+            <td>
+              <input name="authors_cont" type="text" width="130px">
+            </td>
+            <td>
+              <input name="publisher_cont" type="text" width="130px">
+            </td>
+            <td>
+              <input type="submit" value="Search" width="130px" style="text-align: center; width: 130px;">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <% if @result.present? %>
+      <%= render partial: 'results', formats: [:html]  %>
+    <% end %>
+  </body>
+</html>

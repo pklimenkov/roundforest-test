@@ -1,0 +1,30 @@
+<div style="margin: 0 auto; width: 80%; margin-top: 10px;">
+  <table width="100%">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Genres</th>
+      <th>Authors</th>
+      <th>Publisher</th>
+    </tr>
+    <% @result.each_with_index do |result, index| %>
+      <tr>
+        <td>
+          <%= index + 1 %>
+        </td>
+        <td>
+          <%= result.name %>
+        </td>
+        <td>
+          <%= result.genres %>
+        </td>
+        <td>
+          <%= result.authors %>
+        </td>
+        <td>
+          <%= result.publisher %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>
